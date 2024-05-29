@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "fuel-efficiency-intelligence",
+    "name": "FE Intel",
     "slug": "fuel-efficiency-intelligence",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -38,8 +38,10 @@
       },
       "eas": {
         "projectId": "bfc2ff40-64e1-42ea-9647-e946fb8fa2d0"
-      }
+      },
+      "storybookEnabled": "process.env.STORYBOOK_ENABLED",
     },
     "owner": "pmanandhar"
   }
 }
+

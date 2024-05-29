@@ -4,6 +4,7 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import Constants from 'expo-constants';
 
 export default function HomeScreen() {
   return (
@@ -16,7 +17,7 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Welcome User!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -48,6 +49,14 @@ export default function HomeScreen() {
       </ThemedView>
     </ParallaxScrollView>
   );
+}
+
+// Default to rendering your app
+let AppEntryPoint = HomeScreen;
+
+// Render Storybook if storybookEnabled is true
+if (Constants.expoConfig.extra.storybookEnabled === 'true') {
+  AppEntryPoint = require('./.storybook').default;
 }
 
 const styles = StyleSheet.create({
