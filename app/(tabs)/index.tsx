@@ -1,33 +1,50 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { View, type ViewProps, ImageBackground, StyleSheet, Dimensions, Text, Image } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import Constants from 'expo-constants';
-import { MainBackground } from '@/components/MainBackground';
 
 export default function HomeScreen() {
   return (
-    <MainBackground/>
+    <ImageBackground
+            source={require('@/assets/images/pmanandhar_dark_blue_and_green_wavy_background_ec6d.png')}
+            resizeMode="repeat"
+            style={styles.image}
+            
+        >
+           <Text style={styles.text}>Inside</Text>
+          </ImageBackground>
   );
 }
-
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
-  titleContainer: {
+  container: {
+    flex: 1,
+    flexWrap: 'wrap',
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    justifyContent: 'center',
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+  imageContainer: {
+    height: windowHeight,
+    width: windowWidth,
+    borderWidth: 0,
+    borderColor: '#000',
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  image: {
+    flex: 1,
+    resizeMode: 'contain',
+    width: '100%',
+  },
+  text: {
+    color: 'white',
+    fontSize: 42,
+    lineHeight: 84,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    backgroundColor: '#000000c0',
   },
 });
