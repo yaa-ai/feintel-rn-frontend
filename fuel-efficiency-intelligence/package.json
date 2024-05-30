@@ -10,10 +10,7 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
-    "storybook-generate": "sb-rn-get-stories",
-    "storybook": "cross-env STORYBOOK_ENABLED='true' expo start",
-    "storybook:ios": "cross-env STORYBOOK_ENABLED='true' expo start --ios",
-    "storybook:android": "cross-env STORYBOOK_ENABLED='true' expo start --android"
+    "storybook-generate": "sb-rn-get-stories"
   },
   "jest": {
     "preset": "jest-expo"
