@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { HelloWave } from './HelloWave';
+import { HelloWave } from '../../../components/HelloWave';
 
 const meta = {
   component: HelloWave,
