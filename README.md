@@ -29,3 +29,6 @@ You can start developing by editing the files inside the **app** directory. This
 
 - for some reason stories did not work from the `components` folder, but needed to be put in `stories` folder inside of `.storybook`.
 
+## Asset credits and licenses
+
+1. `pmanandhar_dark_blue_and_green_wavy_background_ec6d.png` generated using Midjourney by Prakash Manandhar, released under Creative Commons License.
