@@ -20,7 +20,9 @@ export default function HomeScreen() {
         <View style={styles.imageContainer}>
           <Image source={require('@/assets/images/pmanandhar_logo_with_vehicles_notext.png')} style={styles.logo} />
         </View>
-        <Text style={styles.textByLine}>Intelligent Tracking of Your Vehicles</Text>
+        <Text style={styles.textByLine}>Track and Compare your performance {'\n'}with Peers{"\n"}
+        </Text>
+        
       </View>
     </ImageBackground>
           
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     fontSize: 24,
-    lineHeight: 84,
+    lineHeight: 40,
     fontWeight: 'bold',
     textAlign: 'center',
     width: '100%',
@@ -72,14 +74,16 @@ const styles = StyleSheet.create({
   },
 
   textByLine: {
-    color: 'white',
     fontSize: 18,
-    lineHeight: 84,
+    lineHeight: 40,
     fontWeight: 'bold',
     textAlign: 'center',
     width: '100%',
     backgroundColor: '#000000c0',
     color: '#539d3d',
   },
+  textByLine2: {
+    fontStyle: 'italic',
+  }
   
 });
