@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# React Native frontend for FE Intel (Fuel Efficiency Intelligence).
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app). It was updates to include storybooks using `npx storybook@latest init` as described in the [StorybookJS ReactNative documumentation](https://github.com/storybookjs/react-native). 
 
