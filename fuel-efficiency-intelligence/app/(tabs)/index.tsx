@@ -51,14 +51,6 @@ export default function HomeScreen() {
   );
 }
 
-// Default to rendering your app
-let AppEntryPoint = HomeScreen;
-
-// Render Storybook if storybookEnabled is true
-if (Constants.expoConfig.extra.storybookEnabled === 'true') {
-  AppEntryPoint = require('./.storybook').default;
-}
-
 const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
